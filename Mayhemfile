@@ -2,4 +2,4 @@ project: egg
 target: parser
 
 cmds:
-    - cmd: /parser
+    - cmd: ./parser
