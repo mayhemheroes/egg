@@ -1,0 +1,5 @@
+project: egg
+target: parser
+
+cmds:
+    - cmd: ./parser
