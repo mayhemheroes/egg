@@ -5,7 +5,7 @@ jobs:
   test:
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6.0.2
     - name: Cache cargo bin
       uses: actions/cache@v2
       with:
@@ -18,7 +18,7 @@ jobs:
   nits:
     runs-on: ubuntu-20.04
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v6.0.2
     - name: Install cargo deadlinks
       run: |
         curl -L -o ~/.cargo/bin/cargo-deadlinks https://github.com/deadlinks/cargo-deadlinks/releases/download/0.4.2/deadlinks-linux
